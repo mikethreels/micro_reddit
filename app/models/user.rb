@@ -8,4 +8,4 @@ class User < ApplicationRecord
   validates :email, presence: { message: 'User cannot be empty' },
                     uniqueness: { message: 'Email already exists' },
                     format: { with: URI::MailTo::EMAIL_REGEXP, message: 'Please enter a valid email' }
-    end
+end
